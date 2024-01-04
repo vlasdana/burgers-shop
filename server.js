@@ -5,10 +5,8 @@ const Product = require("./models/productModel");
 const app = express();
 
 app.use(express.json());
+app.use(express.static("public"));
 
-app.get("/", function (req, res) {
-  res.status(200).send("body");
-});
 app.post("/product", async (req, res) => {
   try {
     const product = await Product.create(req.body);
