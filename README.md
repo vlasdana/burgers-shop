@@ -1,4 +1,11 @@
 # vlas
+#  Nume proiect: Dana menu geststore
+## Descriere:- App for use to manage a digital menu for a restaurant
+                -2 categories 
+                - products
+                - form to insert, update and delete of products
+## Scop: digital menu management - admin side
+## Instructions: install xampp needed
 
 
 
