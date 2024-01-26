@@ -1,4 +1,17 @@
 # vlas
+#  Nume proiect: Dana menu geststore
+## Descriere:- App for use to manage a digital menu for a restaurant
+                -2 categories 
+                - products
+                - form to insert, update and delete of products
+## Scop: digital menu management - admin side
+## Instructions: install xampp needed
+## Project milestones: 
+- [ ] setting up folder structure
+- [ ] defining database model & objects relation
+- [ ] create basic database MENU test table myMenu
+
+
 
 
 
@@ -91,3 +104,4 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
