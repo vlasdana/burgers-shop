@@ -1,6 +1,7 @@
 // import express and categoryRoutes
-import express from "express";
-import categoryRoutes from "../routes/categoryRoutes";
+import express from 'express';
+import categoryRoutes from '../routes/categoryRoutes.js';
+
 const app = express();
 // now we use app as middleware
 app.use(express.urlencoded({ extended: true }));
