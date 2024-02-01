@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<header>
+    <img src="../public/media/burger.png">
+    
+    <h1>Burger Shop Manager</h1>
+    <nav>
+      <ul>
+        <li><a href="/category/burgers">Burgers</a></li>
+        <li><a href="/category/drinks">Drinks</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+<body>
+    <main>
+        <div class="container">
+          <form id="product_form" method="post" action="/save">
+            <div class="form_group">
+              <label for="product_name" class="create_productLbl"
+                >Product Name:</label
+              ><br />
+              <input type="text" name="name" required /><br />
+            </div>
+            <div class="form_group">
+              <label for="product_description" class="create_productLbl"
+                >Product Description:</label
+              ><br />
+              <textarea id="product_description" name="description"></textarea
+              ><br />
+            </div>
+  
+            <div class="form_group">
+              <label for="product_active" class="create_productLbl"
+                >Active:</label
+              ><br />
+              <input type="checkbox" id="checkbox" name="is_active" /><br />
+            </div>
+            <div class="form_group">
+              <label for="product_imageurl" class="create_productLbl"
+                >Image URL:</label
+              ><br />
+              <input id="product_imageurl" name="image_url" /><br />
+            </div>
+            <div class="form_group">
+              <label for="product_category" class="create_productLbl"
+                >Category:</label
+              ><br /> 
+            <select id="product_category" name="category" required>
+                <option value="burgers">Burgers</option>
+                <option value="drinks">Drinks</option>
+            </select>
+             <br />
+            </div>
+  
+            <div class="form-box">
+              <button id="save-btn" type="submit">Save</button>
+              <button id="reset-btn" type="reset">Refresh</button>
+            </div>
+          </form>
+        </div>
+      </main>
+</body>
+</html>
