@@ -18,17 +18,17 @@
         <header>
           <img src="../public/media/burger.png" />
 
-          <h1>Burger Shop Manager</h1>
+          <h1>Drinks Page</h1>
           <nav>
             <ul>
-              <li><a href="/category/burgers">Burgers</a></li>
-              <li><a href="/category/drinks">Drinks</a></li>
+              <li><a href="/burgers">Burgers</a></li>
+              <li><a href="/drinks">Drinks</a></li>
             </ul>
           </nav>
         </header>
-        <section class="addNewProduct">
-          <a href="addProduct.html" class="masked-link">Add new product</a>
-        </section>
+        <form id="product_form" method="get" action="/add">
+          <button id="openForm-btn" type="submit">Add product</button>
+        </form>
       </div>
     </main>
     <footer>2024</footer>

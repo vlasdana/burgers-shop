@@ -1,8 +1,8 @@
 //we import mySQL2
-import mysql from "mysql2";
+import mysql from "mysql2/promise";
 import dotenv from "dotenv";
 dotenv.config();
-var dbConnection = mysql.createConnection({
+/*var dbConnection = mysql.createConnection({
   host: "localhost",
   user: "admin",
   password: "admin",
@@ -15,10 +15,10 @@ dbConnection.connect((err) => {
     console.log("Connection done!");
   }
 });
-
+*/
 const pool = mysql.createPool({
   host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
+  user: process.env.DB_USER || "admin",
   password: process.env.DB_PASSWORD || "admin",
   database: process.env.DB_NAME || "menu",
   waitForConnections: true,
@@ -26,7 +26,7 @@ const pool = mysql.createPool({
   queueLimit: 0,
 });
 
-export const query = async (sql, values) => {
+const query = async (sql, values) => {
   console.log("sql to execute is : ", sql);
   try {
     const connection = await pool.getConnection();
@@ -39,5 +39,5 @@ export const query = async (sql, values) => {
     throw error; // Re-throw the error to be caught by the error-handling middleware
   }
 };
-
-export default dbConnection;
+export default query;
+/*export default dbConnection;*/
