@@ -78,7 +78,8 @@ h1 {
   font-weight: bold;
   font-family: Arial, sans-serif;
 }
-.addNewProduct {
+
+#openForm-btn {
   width: 100%;
   background-color: rgb(125, 250, 162);
   padding: 0.5rem;
@@ -92,17 +93,11 @@ h1 {
   color: rgb(35, 48, 16);
   cursor: pointer;
 }
-.addNewProduct:hover {
-  background-color: rgb(183, 241, 201);
+
+#openForm-btn:hover {
+  background-color: rgb(191, 239, 206);
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.174);
   color: black;
-}
-.masked-link,
-.masked-link:visited,
-.masked-link:hover,
-.masked-link:active {
-  color: inherit; /* link has the same color like text */
-  text-decoration: none; /* Eliminate underline*/
 }
 
 main {
