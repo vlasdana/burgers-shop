@@ -43,13 +43,13 @@
         </tr>
       </thead>
       <tbody>
-        <% data_drinks.forEach(function(item){ %>
+        <% b.forEach(function(item){ %>
         <tr>
           <td><%= item.id %></td>
           <td><%= item.name %></td>
           <td><%= item.description %></td>
-          <td><%= item.active %></td>
-          <td><%= item.image %></td>
+          <td><%= item.is_active %></td>
+          <td><%= item.image_url %></td>
         </tr>
         <% }); %>
       </tbody>

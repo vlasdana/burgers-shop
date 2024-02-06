@@ -4,7 +4,7 @@ class Item {
   constructor(category) {
     this.category = category;
   }
-  static async getBurgers(categoryName) {
+  static async getProducts(categoryName) {
     const result = await query("SELECT * FROM products WHERE category = ? ", [
       categoryName,
     ]);

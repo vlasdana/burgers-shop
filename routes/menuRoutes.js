@@ -3,6 +3,7 @@ import {
   getAllMenuItems,
   saveProduct,
   burgers,
+  getDrinks,
 } from "../controllers/menuController.js";
 import express from "express";
 
@@ -17,8 +18,9 @@ router.get("/add", (req, res) => {
 });
 
 router.get("/burgers", burgers);
+router.get("/drinks", getDrinks);
 
-const data_drinks = [
+/*const data_drinks = [
   {
     id: 11,
     name: "Fanta",
@@ -43,7 +45,7 @@ const data_drinks = [
 ];
 router.get("/drinks", (req, res) => {
   res.render("drinks", { data_drinks });
-});
+});*/
 
 router.post("/save", saveProduct);
 /*router.get("/checkdb", (req, res) => {

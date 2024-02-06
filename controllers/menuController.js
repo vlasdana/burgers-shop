@@ -33,7 +33,12 @@ export async function saveProduct(req, res) {
 }
 
 export async function burgers(req, res) {
-  const a = await Item.getBurgers("burgers");
+  const a = await Item.getProducts("burgers");
   res.render("burgers", { a });
 }
+export async function getDrinks(req, res) {
+  const b = await Item.getProducts("drinks");
+  res.render("drinks", { b });
+}
+
 export { getAllMenuItems };
