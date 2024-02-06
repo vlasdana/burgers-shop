@@ -9,7 +9,6 @@ class MenuItem {
   }
 
   async save() {
-    console.log("esti aici");
     await query(
       "INSERT INTO products(name, description, is_active, image_url, category) VALUES (?,?,?,?,?)",
       [

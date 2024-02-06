@@ -19,7 +19,7 @@ const query = async (sql, values) => {
     const connection = await pool.getConnection();
     const result = await connection.query(sql, values);
     connection.release();
-    console.log("S-a incheiat query!");
+    console.log("Query done!");
     return result[0];
   } catch (error) {
     console.error(error);
