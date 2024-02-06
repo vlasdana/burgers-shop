@@ -8,7 +8,7 @@ class Item {
     const result = await query("SELECT * FROM products WHERE category = ? ", [
       categoryName,
     ]);
-    return result[0];
+    return result;
   }
 }
 export default Item;
