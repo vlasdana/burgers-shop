@@ -19,8 +19,27 @@ router.get("/add", (req, res) => {
 router.get("/burgers", burgers);
 
 const data_drinks = [
-  { id: 11, name: "Fanta" },
-  { id: 22, name: "Coca-Cola" },
+  {
+    id: 11,
+    name: "Fanta",
+    description: "sparkling/non-alcoholic",
+    active: "\u2714",
+    image: "undefined",
+  },
+  {
+    id: 12,
+    name: "Coca-Cola",
+    description: "sparkling/non-alcoholic",
+    active: "\u2714",
+    image: "undefined",
+  },
+  {
+    id: 13,
+    name: "Sprite",
+    description: "sparkling/non-alcoholic",
+    active: "\u2714",
+    image: "undefined",
+  },
 ];
 router.get("/drinks", (req, res) => {
   res.render("drinks", { data_drinks });
