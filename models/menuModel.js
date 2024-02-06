@@ -22,4 +22,5 @@ class MenuItem {
     );
   }
 }
+
 export default MenuItem;

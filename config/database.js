@@ -39,5 +39,6 @@ const query = async (sql, values) => {
     throw error; // Re-throw the error to be caught by the error-handling middleware
   }
 };
+
 export default query;
 /*export default dbConnection;*/

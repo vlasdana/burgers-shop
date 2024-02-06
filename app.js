@@ -10,7 +10,8 @@ dotenv.config();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use("/", menuRouter);
-
+app.set("view engine", "ejs");
+app.set("views", "views");
 //app.use('/save', menuRouter);
 
 const PORT = process.env.PORT || 3000;

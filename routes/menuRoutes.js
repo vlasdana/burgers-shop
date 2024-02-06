@@ -1,6 +1,11 @@
 import database from "../config/database.js";
-import { getAllMenuItems, saveProduct } from "../controllers/menuController.js";
+import {
+  getAllMenuItems,
+  saveProduct,
+  burgers,
+} from "../controllers/menuController.js";
 import express from "express";
+
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -11,12 +16,14 @@ router.get("/add", (req, res) => {
   res.sendFile("addProduct.html", { root: "public" });
 });
 
-router.get("/burgers", (req, res) => {
-  res.sendFile("burgers.html", { root: "public" });
-});
+router.get("/burgers", burgers);
 
+const data_drinks = [
+  { id: 11, name: "Fanta" },
+  { id: 22, name: "Coca-Cola" },
+];
 router.get("/drinks", (req, res) => {
-  res.sendFile("drinks.html", { root: "public" });
+  res.render("drinks", { data_drinks });
 });
 
 router.post("/save", saveProduct);
