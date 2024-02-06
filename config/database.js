@@ -2,20 +2,7 @@
 import mysql from "mysql2/promise";
 import dotenv from "dotenv";
 dotenv.config();
-/*var dbConnection = mysql.createConnection({
-  host: "localhost",
-  user: "admin",
-  password: "admin",
-  database: "menu",
-});
-dbConnection.connect((err) => {
-  if (err) {
-    console.log("Error database connection!");
-  } else {
-    console.log("Connection done!");
-  }
-});
-*/
+
 const pool = mysql.createPool({
   host: process.env.DB_HOST || "localhost",
   user: process.env.DB_USER || "admin",
