@@ -26,9 +26,13 @@
             </ul>
           </nav>
         </header>
+
         <form id="open_form" method="get" action="/add">
           <button id="openForm-btn" type="submit">Add product</button>
         </form>
+        <div id="successMessage" style="display: none">
+          <p>Data are successfully saved!</p>
+        </div>
       </div>
     </main>
     <footer>2024</footer>
@@ -38,4 +42,18 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script>
+    window.onload = function () {
+      console.log("Pagina a fost încărcată."); // Pentru a verifica dacă scriptul este executat
+      const urlParams = new URLSearchParams(window.location.search);
+      const isSaved = urlParams.get("saved");
+      console.log("isSaved:", isSaved); // Pentru a verifica valoarea lui isSaved
+
+      if (isSaved === "true") {
+        //alert("Datele din formular au fost salvate cu succes!");
+        // sau actualizează DOM-ul pentru a afișa mesajul în pagina
+        document.getElementById("successMessage").style.display = "block";
+      }
+    };
+  </script>
 </html>
