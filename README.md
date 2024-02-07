@@ -1,4 +1,3 @@
-
 # Project Name: Menu Management
 
 ## Scope: digital menu management - admin side
@@ -6,8 +5,8 @@
 ## Description:- App to manage a digital menu for a restaurant
 
                 - 2 categories 
-                - products
-                - form to insert products in a database 
+                - products details
+                - form to insert new products in a database 
                 - list to vizualise the products based on their category
 
 
