@@ -3,12 +3,13 @@ import Item from "../models/menuModelItem.js";
 
 export async function saveProduct(req, res) {
   try {
-    const { name, description, image_url, category } = req.body;
+    const { name, description, price, image_url, category } = req.body;
     const is_active = req.body.is_active === "on";
 
     const product = new MenuItem(
       name,
       description,
+      price,
       is_active,
       image_url,
       category
