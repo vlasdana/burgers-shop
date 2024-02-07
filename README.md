@@ -4,10 +4,10 @@
 
 ## Description:- App to manage a digital menu for a restaurant
 
-                -2 categories
+                -2 categories 
                 - products
                 - form to insert products in a database
-                - list products based om their category
+                - list products based on their category
 
 ## Scop: digital menu management - admin side
 
@@ -17,7 +17,7 @@
 
 - [ ] setting up folder structure
 - [ ] defining database model & objects relation
-- [ ] create basic database MENU test table myMenu
+- [ ] create basic database MENU table products
 
 ## Getting started
 
