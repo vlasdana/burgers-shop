@@ -46,12 +46,18 @@
       <tbody>
         <% b.forEach(function(item){ %>
         <tr>
-          <td><%= item.id %></td>
-          <td><%= item.name %></td>
-          <td><%= item.description %></td>
-          <td><%= item.price %></td>
-          <td><%= item.is_active %></td>
-          <td><%= item.image_url %></td>
+          <form action="/delete/<%=item.id %>?_method=DELETE" method="post">
+            <td>
+              <%= item.id %>
+
+              <button type="submit" aria-label="Delete">&#10006;</button>
+            </td>
+            <td><%= item.name %></td>
+            <td><%= item.description %></td>
+            <td><%= item.price %></td>
+            <td><%= item.is_active %></td>
+            <td><%= item.image_url %></td>
+          </form>
         </tr>
         <% }); %>
       </tbody>

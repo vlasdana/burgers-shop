@@ -1,5 +1,6 @@
 import MenuItem from "../models/menuModel.js";
 import Item from "../models/menuModelItem.js";
+import MenuId from "../models/menuModId.js";
 
 export async function saveProduct(req, res) {
   try {
@@ -30,4 +31,7 @@ export async function getBurgers(req, res) {
 export async function getDrinks(req, res) {
   const b = await Item.getProducts("drinks");
   res.render("drinks", { b });
+}
+export async function deleteById(id) {
+  const a = await MenuId.delete(id);
 }

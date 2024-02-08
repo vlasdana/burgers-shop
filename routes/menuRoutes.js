@@ -3,6 +3,7 @@ import {
   saveProduct,
   getBurgers,
   getDrinks,
+  deleteById,
 } from "../controllers/menuController.js";
 import express from "express";
 
@@ -14,6 +15,14 @@ router.get("/", (req, res) => {
 
 router.get("/add", (req, res) => {
   res.sendFile("addProduct.html", { root: "public" });
+});
+
+router.delete("/:id", function (req, res) {
+  deleteById(req.params.id);
+  console.log(
+    "The product with id: " + req.params.id + " was deleted from the database."
+  );
+  //res.sendFile("index.html", { root: "public" });
 });
 
 router.get("/burgers", getBurgers);
