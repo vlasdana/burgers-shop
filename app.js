@@ -10,7 +10,9 @@ import dotenv from "dotenv";
 dotenv.config();
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+//indicate where the static files are
 app.use(express.static("public"));
+
 app.use("/", menuRouter);
 app.use("/delete", menuRouter);
 app.set("view engine", "ejs");
