@@ -5,7 +5,7 @@
 ## Description:- App to manage a digital menu for a restaurant
 
                 - 2 categories (Burgers & Drinks)
-                - products details
+                - products details (id, description, price, status, image)
                 - form to insert new products in a database 
                 - list to vizualise the products based on their category
                 - Button to delete an item from the list
@@ -52,4 +52,11 @@ dana-monica.vlas@edu.fh-joanneum.at
 ## License
 
 For open source 
+
+##Sources
+
+- University lecture slides and academic resources
+- Youtube tutorials
+- Stack Overflow
+- ChatGPT
 
