@@ -17,12 +17,27 @@ router.get("/add", (req, res) => {
   res.sendFile("addProduct.html", { root: "public" });
 });
 
-router.delete("/:id", function (req, res) {
+/*router.delete("/:id", function (req, res) {
   deleteById(req.params.id);
   console.log(
     "The product with id: " + req.params.id + " was deleted from the database."
   );
   //res.sendFile("index.html", { root: "public" });
+});*/
+router.delete("/:id", async function (req, res) {
+  try {
+    await deleteById(req.params.id);
+    console.log(
+      "The product with id: " +
+        req.params.id +
+        " was deleted from the database."
+    );
+    res.json({ success: true, message: "Product successfully deleted." });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ success: false, message: "Error deleting product." });
+  }
 });
 
 router.get("/burgers", getBurgers);

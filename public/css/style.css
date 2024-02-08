@@ -125,6 +125,13 @@ td {
   font-size: 1.3rem;
   height: 1.5rem;
 }
+.delete-header {
+  /*color: rgb(85, 48, 131);*/
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  background-color: #42384b;
+}
 
 thead {
   border: 5px solid black;
