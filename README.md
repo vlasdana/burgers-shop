@@ -15,12 +15,18 @@
 
 - [x] setting up folder structure
 - [x] defining database model & objects relation
+- [x] configure environment variables, create a .env file
 - [x] create basic database MENU table products
 - [x] define routing for Project
+    * Routes define how the application responds to various HTTP requests at different endpoints.
 - [x] define models 
+    * Models handle all database interactions, including CRUD operations, allowing the rest of the app to avoid direct SQL queries.This provides security and code abstraction.
 - [x] define controlers
-- [x] configure environment variables, create a .env file
-
+    * menuControllers.js manage user interaction and data flow for displaying, adding, and deleting menu items. 
+- [x] define views
+    * views folder with EJS files for generating user interface, allowing the app to serve dynamic the web page. 
+- [x] define public folder
+    * for the app's static resources (HTML, CSS, Media)
 
 ## Technology
 - Backend: Node.js 
