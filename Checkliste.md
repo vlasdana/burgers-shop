@@ -8,15 +8,15 @@ Es wird dringend empfohlen, diese Checkliste in Ihr eigenes Projekt-Repository z
 
 **Checkliste für die eigene fortlaufende Übung in Web Application Development**
 
-[x] Allgemeine Planung
+[ x ] Allgemeine Planung
 
-[x]Festlegung der Projektidee
+[x] Festlegung der Projektidee
 
-[x]Zielgruppenanalyse
+[x] Zielgruppenanalyse
 
-[x]Auswahl der Technologien und Tools
+[x] Auswahl der Technologien und Tools
 
-[x]Initialisierung des Projektrepositoriums (Git)
+[x] Initialisierung des Projektrepositoriums (Git)
 
 [x]Erstellung eines Zeitplans
 
