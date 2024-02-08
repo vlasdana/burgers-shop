@@ -53,7 +53,7 @@ dana-monica.vlas@edu.fh-joanneum.at
 
 For open source 
 
-##Sources
+## Sources
 
 - University lecture slides and academic resources
 - Youtube tutorials
