@@ -4,10 +4,11 @@
 
 ## Description:- App to manage a digital menu for a restaurant
 
-                - 2 categories 
+                - 2 categories (Burgers & Drinks)
                 - products details
                 - form to insert new products in a database 
                 - list to vizualise the products based on their category
+                - Button to delete an item from the list
 
 
 ## Project milestones:
