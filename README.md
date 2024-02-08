@@ -15,6 +15,9 @@
 - [x] setting up folder structure
 - [x] defining database model & objects relation
 - [x] create basic database MENU table products
+- [x] define routing for Project
+- [x] define models 
+- [x] define controlers
 - [x] configure environment variables, create a .env file
 
 
@@ -28,6 +31,8 @@
 ## Instructions: 
 
 - install __xampp__ needed 
+- connect to the Xampp mySql, and adapt your .env file for the connection
+- execute createdb.sql in your local database(start apache server from xampp and access in the browser localhost/phpMyAdmin, and go to sql section)
 - install __Node.js__ needed
 - clone the repository: git clone https://git-iit.fh-joanneum.at/msd-webapp/ws23_students/vlas.git
 - initialize npm: __npm init -y__ (creates a package.json file for managing dependencies)
