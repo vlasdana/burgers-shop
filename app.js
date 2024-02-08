@@ -1,9 +1,9 @@
 import express from "express";
 import menuRouter from "./routes/menuRoutes.js";
+//method-override package, enabling HTTP methods like PUT or DELETE where not natively supported by the client (e.g., in HTML forms).
 import methodOverride from "method-override";
 //we import the apllication configuration
-//import app from "./config/app.js";
-//import {query} from './config/database.js';
+
 const app = express();
 import dotenv from "dotenv";
 
@@ -22,6 +22,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server application is running on http://localhost:${PORT}`);
 });
-
-//const result = await query('Select * FROM test;');
-//console.log(result);

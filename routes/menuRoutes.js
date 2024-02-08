@@ -7,6 +7,7 @@ import {
 } from "../controllers/menuController.js";
 import express from "express";
 
+//router instance using Express function to define the routes
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -17,13 +18,6 @@ router.get("/add", (req, res) => {
   res.sendFile("addProduct.html", { root: "public" });
 });
 
-/*router.delete("/:id", function (req, res) {
-  deleteById(req.params.id);
-  console.log(
-    "The product with id: " + req.params.id + " was deleted from the database."
-  );
-  //res.sendFile("index.html", { root: "public" });
-});*/
 router.delete("/:id", async function (req, res) {
   try {
     await deleteById(req.params.id);

@@ -17,7 +17,7 @@ export async function saveProduct(req, res) {
     );
     await product.save();
 
-    //res.sendFile("index.html", { root: "public" });
+    //On success, the user is redirected to the homepage.
     res.redirect("/?saved=true");
   } catch (error) {
     res.status(500).send("Internal Server Error while doing save action!");
