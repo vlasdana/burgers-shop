@@ -1,68 +1,116 @@
-# Project Name: Menu Management
+# Menu Management
 
-## Scope: digital menu management - admin side
+A web application for managing a digital restaurant menu.
 
-## Description:- App to manage a digital menu for a restaurant
+The application allows restaurant menu items to be created, displayed and deleted, with products organized into the categories Burgers and Drinks.
 
-                - 2 categories (Burgers & Drinks)
-                - products details (id, description, price, status, image)
-                - form to insert new products in a database 
-                - list to vizualise the products based on their category
-                - Button to delete an item from the list
+## Features
 
+- The application follows a CRUD-based approach; create, read and delete operations are currently implemented.
+- Display menu items by category
+- Add new products through a form
+- Store and retrieve product data from a MySQL database
+- Delete products with confirmation dialogs
+- Product information includes description, price, status and image
+- Dynamic server-side rendering with EJS
+- Responsive interface built with Bootstrap
 
-## Project milestones:
+## Technologies
 
-- [x] setting up folder structure
-- [x] defining database model & objects relation
-- [x] configure environment variables, create a .env file
-- [x] create basic database MENU table products
-- [x] define routing for Project
-    * Routes define how the application responds to various HTTP requests at different endpoints.
-- [x] define models 
-    * Models handle all database interactions, including CRUD operations, allowing the rest of the app to avoid direct SQL queries.This provides security and code abstraction.
-- [x] define controlers
-    * menuControllers.js manage user interaction and data flow for displaying, adding, and deleting menu items. 
-- [x] define views
-    * views folder with EJS files for generating user interface, allowing the app to serve dynamic the web page. 
-- [x] define public folder
-    * for the app's static resources (HTML, CSS, Media)
+### Frontend
 
-## Technology
-- Backend: Node.js 
-- Frontend: HTML, CSS, JavaScript, Bootstrap, EJS
-- Database: MySQL
-- Dependencies: Express.js, Mysql2, Nodemon, EJS, Dotenv
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- EJS
 
+### Backend
 
-## Instructions: 
+- Node.js
+- Express.js
 
-- install __xampp__ needed 
-- connect to the Xampp mySql, and adapt your .env file for the connection
-- execute createdb.sql in your local database(start apache server from xampp and access in the browser localhost/phpMyAdmin, and go to sql section)
-- install __Node.js__ needed
-- clone the repository: git clone https://git-iit.fh-joanneum.at/msd-webapp/ws23_students/vlas.git
-- initialize npm: __npm init -y__ (creates a package.json file for managing dependencies)
-- install dependencies with: __npm install__
-- server starts with the command : __npm start__
-- server will run on __port :3000__ 
-- Access the application on __http://localhost:3000__
-                 
+### Database
 
-## Authors and acknowledgment
+- MySQL
+- mysql2
 
-Dana-Monica Vlas 
-dana-monica.vlas@edu.fh-joanneum.at
+### Other
 
+- dotenv
+- Nodemon
 
-## License
+## Architecture
 
-For open source 
+The application follows a structured separation between routes, controllers, models and views.
 
-## Sources
+Database access is handled through the model layer, while controllers manage the application logic and data flow between the backend and the user interface.
 
-- University lecture slides and academic resources
-- Youtube tutorials
-- Stack Overflow
-- ChatGPT
+## Running the Project Locally
 
+### Requirements
+
+- Node.js
+- MySQL
+- XAMPP or another local MySQL environment
+
+### Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/vlasdana/burgers-shop.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd burgers-shop
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start MySQL using XAMPP or another local MySQL environment.
+
+5. Import `createdb.sql` into your local MySQL database.
+
+6. Create a `.env` file in the project root with the following configuration:
+
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=
+   DB_NAME=menu
+   ```
+
+   Adapt the database credentials if necessary.
+
+7. Start the application:
+
+   ```bash
+   npm start
+   ```
+
+8. Open the application in your browser:
+
+   ```text
+   http://localhost:3000
+   ```
+
+## Possible Future Improvements
+
+- Implement the update operation to complete full CRUD functionality
+- Add further menu categories and product management options
+- Add a REST API layer for a more decoupled frontend/backend architecture
+
+## Author
+
+Dana-Monica Vlas
+
+## About
+
+University project developed as part of the Web Application Development coursework at FH JOANNEUM.
